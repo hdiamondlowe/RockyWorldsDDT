@@ -1,0 +1,82 @@
+# %ECSV 1.0
+# ---
+# datatype:
+# - name: hostname
+#   datatype: string
+#   description: Host Name
+#   meta: !!omap
+#   - {_votable_string_dtype: char}
+#   subtype: json
+# - name: pl_name
+#   datatype: string
+#   description: Planet Name
+#   meta: !!omap
+#   - {_votable_string_dtype: char}
+#   subtype: json
+# - {name: sy_dist, unit: pc, datatype: float64}
+# - {name: sy_disterr1, datatype: float64}
+# - {name: sy_disterr2, datatype: float64}
+# - name: rastr
+#   unit: sexagesimal
+#   datatype: string
+#   description: RA
+#   meta: !!omap
+#   - {_votable_string_dtype: char}
+#   subtype: json
+# - name: decstr
+#   unit: sexagesimal
+#   datatype: string
+#   description: Dec
+#   meta: !!omap
+#   - {_votable_string_dtype: char}
+#   subtype: json
+# - {name: sy_vmag, datatype: float64}
+# - {name: sy_jmag, datatype: float64}
+# - {name: sy_kmag, datatype: float64}
+# - {name: st_mass, unit: Solar mass, datatype: float64}
+# - {name: st_masserr1, unit: Solar mass, datatype: float64}
+# - {name: st_masserr2, unit: Solar mass, datatype: float64}
+# - {name: st_rad, unit: Solar Radius, datatype: float64}
+# - {name: st_raderr1, unit: Solar Radius, datatype: float64}
+# - {name: st_raderr2, unit: Solar Radius, datatype: float64}
+# - {name: st_teff, unit: K, datatype: float64}
+# - {name: st_tefferr1, unit: K, datatype: float64}
+# - {name: st_tefferr2, unit: K, datatype: float64}
+# - {name: st_tefferr12, unit: K, datatype: float64}
+# - {name: st_tefferr22, unit: K, datatype: float64}
+# - {name: st_logg, unit: log10(cm/s**2), datatype: float64}
+# - {name: st_lum, unit: log(Solar), datatype: float64}
+# - {name: pl_tranmid, unit: days, datatype: float64}
+# - {name: pl_tranmiderr1, unit: days, datatype: float64}
+# - {name: pl_tranmiderr2, unit: days, datatype: float64}
+# - {name: pl_rade, unit: Earth Radius, datatype: float64}
+# - {name: pl_radeerr1, unit: Earth Radius, datatype: float64}
+# - {name: pl_radeerr2, unit: Earth Radius, datatype: float64}
+# - {name: pl_bmasse, unit: Earth Mass, datatype: float64}
+# - {name: pl_bmasseerr1, datatype: float64}
+# - {name: pl_bmasseerr2, datatype: float64}
+# - {name: pl_orbper, unit: days, datatype: float64}
+# - {name: pl_orbpererr1, unit: days, datatype: float64}
+# - {name: pl_orbpererr2, unit: days, datatype: float64}
+# - {name: pl_orbsmax, datatype: float64}
+# - {name: pl_orbsmaxerr1, unit: AU, datatype: float64}
+# - {name: pl_orbsmaxerr2, unit: AU, datatype: float64}
+# - {name: pl_orbincl, unit: deg, datatype: float64}
+# - {name: pl_imppar, datatype: float64}
+# - {name: pl_orbeccen, datatype: float64}
+# - {name: pl_orbeccenerr1, datatype: float64}
+# - {name: pl_orbeccenerr2, datatype: float64}
+# - {name: pl_eqt, unit: K, datatype: float64}
+# - {name: pl_ratror, datatype: float64}
+# - {name: pl_ratrorerr1, datatype: float64}
+# - {name: pl_ratrorerr2, datatype: float64}
+# - {name: pl_ratdor, datatype: float64}
+# - {name: pl_ratdorerr1, datatype: float64}
+# - {name: pl_ratdorerr2, datatype: float64}
+# - {name: tran_flag, datatype: int32}
+# - {name: rv_flag, datatype: int32}
+# schema: astropy-2.0
+hostname pl_name sy_dist sy_disterr1 sy_disterr2 rastr decstr sy_vmag sy_jmag sy_kmag st_mass st_masserr1 st_masserr2 st_rad st_raderr1 st_raderr2 st_teff st_tefferr1 st_tefferr2 st_tefferr12 st_tefferr22 st_logg st_lum pl_tranmid pl_tranmiderr1 pl_tranmiderr2 pl_rade pl_radeerr1 pl_radeerr2 pl_bmasse pl_bmasseerr1 pl_bmasseerr2 pl_orbper pl_orbpererr1 pl_orbpererr2 pl_orbsmax pl_orbsmaxerr1 pl_orbsmaxerr2 pl_orbincl pl_imppar pl_orbeccen pl_orbeccenerr1 pl_orbeccenerr2 pl_eqt pl_ratror pl_ratrorerr1 pl_ratrorerr2 pl_ratdor pl_ratdorerr1 pl_ratdorerr2 tran_flag rv_flag
+"""GJ 367""" """GJ 367 b""" 9.41263 0.002835 -0.002835 """09h44m29.15s""" """-45d46m44.46s""" 10.153 6.632 5.78 0.46 0.01 -0.01 0.46 0.01 -0.01 3522.0 70.0 -70.0 70.0 -70.0 4.78 -1.539 2458544.13635 0.0004 -0.0004 0.699 0.024 -0.024 0.633 0.05 -0.05 0.3219225 2e-07 -2e-07 0.00709 0.00027 -0.00027 79.89 0.584 0.06 0.07 -0.04 1365.0 0.01399 0.00028 -0.00028 3.41 0.06 -0.07 1 1
+"""GJ 367""" """GJ 367 c""" 9.41263 0.002835 -0.002835 """09h44m29.15s""" """-45d46m44.46s""" 10.153 6.632 5.78 0.46 0.01 -0.01 0.46 0.01 -0.01 3522.0 70.0 -70.0 70.0 -70.0 4.78 -1.539 2459153.94 0.3 -0.3 1.86 "" "" 4.13 0.36 -0.36 11.5301 0.0078 -0.0078 "" "" "" "" "" 0.09 0.07 -0.07 "" "" "" "" "" "" "" 0 1
+"""GJ 367""" """GJ 367 d""" 9.41263 0.002835 -0.002835 """09h44m29.15s""" """-45d46m44.46s""" 10.153 6.632 5.78 0.46 0.01 -0.01 0.46 0.01 -0.01 3522.0 70.0 -70.0 70.0 -70.0 4.78 -1.539 2459181.82 1.1 -1.1 2.33 "" "" 6.03 0.49 -0.49 34.369 0.073 -0.073 "" "" "" "" "" 0.14 0.09 -0.09 "" "" "" "" "" "" "" 0 1

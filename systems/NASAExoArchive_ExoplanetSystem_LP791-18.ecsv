@@ -1,0 +1,82 @@
+# %ECSV 1.0
+# ---
+# datatype:
+# - name: hostname
+#   datatype: string
+#   description: Host Name
+#   meta: !!omap
+#   - {_votable_string_dtype: char}
+#   subtype: json
+# - name: pl_name
+#   datatype: string
+#   description: Planet Name
+#   meta: !!omap
+#   - {_votable_string_dtype: char}
+#   subtype: json
+# - {name: sy_dist, unit: pc, datatype: float64}
+# - {name: sy_disterr1, datatype: float64}
+# - {name: sy_disterr2, datatype: float64}
+# - name: rastr
+#   unit: sexagesimal
+#   datatype: string
+#   description: RA
+#   meta: !!omap
+#   - {_votable_string_dtype: char}
+#   subtype: json
+# - name: decstr
+#   unit: sexagesimal
+#   datatype: string
+#   description: Dec
+#   meta: !!omap
+#   - {_votable_string_dtype: char}
+#   subtype: json
+# - {name: sy_vmag, datatype: float64}
+# - {name: sy_jmag, datatype: float64}
+# - {name: sy_kmag, datatype: float64}
+# - {name: st_mass, unit: Solar mass, datatype: float64}
+# - {name: st_masserr1, unit: Solar mass, datatype: float64}
+# - {name: st_masserr2, unit: Solar mass, datatype: float64}
+# - {name: st_rad, unit: Solar Radius, datatype: float64}
+# - {name: st_raderr1, unit: Solar Radius, datatype: float64}
+# - {name: st_raderr2, unit: Solar Radius, datatype: float64}
+# - {name: st_teff, unit: K, datatype: float64}
+# - {name: st_tefferr1, unit: K, datatype: float64}
+# - {name: st_tefferr2, unit: K, datatype: float64}
+# - {name: st_tefferr12, unit: K, datatype: float64}
+# - {name: st_tefferr22, unit: K, datatype: float64}
+# - {name: st_logg, unit: log10(cm/s**2), datatype: float64}
+# - {name: st_lum, unit: log(Solar), datatype: float64}
+# - {name: pl_tranmid, unit: days, datatype: float64}
+# - {name: pl_tranmiderr1, unit: days, datatype: float64}
+# - {name: pl_tranmiderr2, unit: days, datatype: float64}
+# - {name: pl_rade, unit: Earth Radius, datatype: float64}
+# - {name: pl_radeerr1, unit: Earth Radius, datatype: float64}
+# - {name: pl_radeerr2, unit: Earth Radius, datatype: float64}
+# - {name: pl_bmasse, unit: Earth Mass, datatype: float64}
+# - {name: pl_bmasseerr1, datatype: float64}
+# - {name: pl_bmasseerr2, datatype: float64}
+# - {name: pl_orbper, unit: days, datatype: float64}
+# - {name: pl_orbpererr1, unit: days, datatype: float64}
+# - {name: pl_orbpererr2, unit: days, datatype: float64}
+# - {name: pl_orbsmax, datatype: float64}
+# - {name: pl_orbsmaxerr1, unit: AU, datatype: float64}
+# - {name: pl_orbsmaxerr2, unit: AU, datatype: float64}
+# - {name: pl_orbincl, unit: deg, datatype: float64}
+# - {name: pl_imppar, datatype: float64}
+# - {name: pl_orbeccen, datatype: float64}
+# - {name: pl_orbeccenerr1, datatype: float64}
+# - {name: pl_orbeccenerr2, datatype: float64}
+# - {name: pl_eqt, unit: K, datatype: float64}
+# - {name: pl_ratror, datatype: float64}
+# - {name: pl_ratrorerr1, datatype: float64}
+# - {name: pl_ratrorerr2, datatype: float64}
+# - {name: pl_ratdor, datatype: float64}
+# - {name: pl_ratdorerr1, datatype: float64}
+# - {name: pl_ratdorerr2, datatype: float64}
+# - {name: tran_flag, datatype: int32}
+# - {name: rv_flag, datatype: int32}
+# schema: astropy-2.0
+hostname pl_name sy_dist sy_disterr1 sy_disterr2 rastr decstr sy_vmag sy_jmag sy_kmag st_mass st_masserr1 st_masserr2 st_rad st_raderr1 st_raderr2 st_teff st_tefferr1 st_tefferr2 st_tefferr12 st_tefferr22 st_logg st_lum pl_tranmid pl_tranmiderr1 pl_tranmiderr2 pl_rade pl_radeerr1 pl_radeerr2 pl_bmasse pl_bmasseerr1 pl_bmasseerr2 pl_orbper pl_orbpererr1 pl_orbpererr2 pl_orbsmax pl_orbsmaxerr1 pl_orbsmaxerr2 pl_orbincl pl_imppar pl_orbeccen pl_orbeccenerr1 pl_orbeccenerr2 pl_eqt pl_ratror pl_ratrorerr1 pl_ratrorerr2 pl_ratdor pl_ratdorerr1 pl_ratdorerr2 tran_flag rv_flag
+"""LP 791-18""" """LP 791-18 b""" 26.4927 0.064 -0.0638 """11h02m45.72s""" """-16d24m23.20s""" 16.91 11.559 10.644 0.14 0.01 -0.01 0.18 0.01 -0.01 2960.0 55.0 -55.0 55.0 -55.0 5.12 -2.638 2458774.86973 0.00018 -0.00018 1.212 0.059 -0.058 1.94 "" "" 0.9479981 2.1e-06 -2.1e-06 0.00978 0.00012 -0.00012 88.37 0.33 0.0 "" "" 564.3 0.061 0.0018 -0.0018 11.0 2.0 -4.0 1 0
+"""LP 791-18""" """LP 791-18 c""" 26.4927 0.064 -0.0638 """11h02m45.72s""" """-16d24m23.20s""" 16.91 11.559 10.644 0.14 0.01 -0.01 0.18 0.01 -0.01 2960.0 55.0 -55.0 55.0 -55.0 5.12 -2.638 2458771.055182 9.1e-05 -9.7e-05 2.438 0.096 -0.096 7.1 0.7 -0.7 4.9899093 7.4e-06 -7.2e-06 0.02961 0.00035 -0.00036 89.78 0.134 8e-05 4e-05 -4e-05 324.4 0.12261 0.00097 -0.00097 34.5 2.0 -3.7 1 0
+"""LP 791-18""" """LP 791-18 d""" 26.4927 0.064 -0.0638 """11h02m45.72s""" """-16d24m23.20s""" 16.91 11.559 10.644 0.14 0.01 -0.01 0.18 0.01 -0.01 2960.0 55.0 -55.0 55.0 -55.0 5.12 -2.638 2458772.16211 0.0005 -0.00082 1.032 0.044 -0.043 0.9 0.5 -0.4 2.753436 1.3e-05 -1.3e-05 0.01992 0.00024 -0.00024 89.34 0.27 0.0015 0.00014 -0.00014 395.5 0.05192 0.0009 -0.0009 "" "" "" 1 0

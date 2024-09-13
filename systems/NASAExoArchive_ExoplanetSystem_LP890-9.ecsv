@@ -1,0 +1,81 @@
+# %ECSV 1.0
+# ---
+# datatype:
+# - name: hostname
+#   datatype: string
+#   description: Host Name
+#   meta: !!omap
+#   - {_votable_string_dtype: char}
+#   subtype: json
+# - name: pl_name
+#   datatype: string
+#   description: Planet Name
+#   meta: !!omap
+#   - {_votable_string_dtype: char}
+#   subtype: json
+# - {name: sy_dist, unit: pc, datatype: float64}
+# - {name: sy_disterr1, datatype: float64}
+# - {name: sy_disterr2, datatype: float64}
+# - name: rastr
+#   unit: sexagesimal
+#   datatype: string
+#   description: RA
+#   meta: !!omap
+#   - {_votable_string_dtype: char}
+#   subtype: json
+# - name: decstr
+#   unit: sexagesimal
+#   datatype: string
+#   description: Dec
+#   meta: !!omap
+#   - {_votable_string_dtype: char}
+#   subtype: json
+# - {name: sy_vmag, datatype: float64}
+# - {name: sy_jmag, datatype: float64}
+# - {name: sy_kmag, datatype: float64}
+# - {name: st_mass, unit: Solar mass, datatype: float64}
+# - {name: st_masserr1, unit: Solar mass, datatype: float64}
+# - {name: st_masserr2, unit: Solar mass, datatype: float64}
+# - {name: st_rad, unit: Solar Radius, datatype: float64}
+# - {name: st_raderr1, unit: Solar Radius, datatype: float64}
+# - {name: st_raderr2, unit: Solar Radius, datatype: float64}
+# - {name: st_teff, unit: K, datatype: float64}
+# - {name: st_tefferr1, unit: K, datatype: float64}
+# - {name: st_tefferr2, unit: K, datatype: float64}
+# - {name: st_tefferr12, unit: K, datatype: float64}
+# - {name: st_tefferr22, unit: K, datatype: float64}
+# - {name: st_logg, unit: log10(cm/s**2), datatype: float64}
+# - {name: st_lum, unit: log(Solar), datatype: float64}
+# - {name: pl_tranmid, unit: days, datatype: float64}
+# - {name: pl_tranmiderr1, unit: days, datatype: float64}
+# - {name: pl_tranmiderr2, unit: days, datatype: float64}
+# - {name: pl_rade, unit: Earth Radius, datatype: float64}
+# - {name: pl_radeerr1, unit: Earth Radius, datatype: float64}
+# - {name: pl_radeerr2, unit: Earth Radius, datatype: float64}
+# - {name: pl_bmasse, unit: Earth Mass, datatype: float64}
+# - {name: pl_bmasseerr1, datatype: float64}
+# - {name: pl_bmasseerr2, datatype: float64}
+# - {name: pl_orbper, unit: days, datatype: float64}
+# - {name: pl_orbpererr1, unit: days, datatype: float64}
+# - {name: pl_orbpererr2, unit: days, datatype: float64}
+# - {name: pl_orbsmax, datatype: float64}
+# - {name: pl_orbsmaxerr1, unit: AU, datatype: float64}
+# - {name: pl_orbsmaxerr2, unit: AU, datatype: float64}
+# - {name: pl_orbincl, unit: deg, datatype: float64}
+# - {name: pl_imppar, datatype: float64}
+# - {name: pl_orbeccen, datatype: float64}
+# - {name: pl_orbeccenerr1, datatype: float64}
+# - {name: pl_orbeccenerr2, datatype: float64}
+# - {name: pl_eqt, unit: K, datatype: float64}
+# - {name: pl_ratror, datatype: float64}
+# - {name: pl_ratrorerr1, datatype: float64}
+# - {name: pl_ratrorerr2, datatype: float64}
+# - {name: pl_ratdor, datatype: float64}
+# - {name: pl_ratdorerr1, datatype: float64}
+# - {name: pl_ratdorerr2, datatype: float64}
+# - {name: tran_flag, datatype: int32}
+# - {name: rv_flag, datatype: int32}
+# schema: astropy-2.0
+hostname pl_name sy_dist sy_disterr1 sy_disterr2 rastr decstr sy_vmag sy_jmag sy_kmag st_mass st_masserr1 st_masserr2 st_rad st_raderr1 st_raderr2 st_teff st_tefferr1 st_tefferr2 st_tefferr12 st_tefferr22 st_logg st_lum pl_tranmid pl_tranmiderr1 pl_tranmiderr2 pl_rade pl_radeerr1 pl_radeerr2 pl_bmasse pl_bmasseerr1 pl_bmasseerr2 pl_orbper pl_orbpererr1 pl_orbpererr2 pl_orbsmax pl_orbsmaxerr1 pl_orbsmaxerr2 pl_orbincl pl_imppar pl_orbeccen pl_orbeccenerr1 pl_orbeccenerr2 pl_eqt pl_ratror pl_ratrorerr1 pl_ratrorerr2 pl_ratdor pl_ratdorerr1 pl_ratdorerr2 tran_flag rv_flag
+"""LP 890-9""" """LP 890-9 b""" 32.4298 0.0702 -0.0699 """04h16m31.42s""" """-28d18m56.85s""" 18.0 12.258 11.344 0.12 0.0 -0.0 0.16 0.01 -0.01 2850.0 75.0 -75.0 75.0 -75.0 5.13 -2.841 2459447.82637 0.00014 -0.00014 1.32 0.053 -0.027 13.2 "" "" 2.7299025 3.4e-06 -4e-06 0.01875 0.0001 -0.0001 89.67 0.15 "" "" "" 396.0 "" "" "" 26.32 0.39 -0.82 1 0
+"""LP 890-9""" """LP 890-9 c""" 32.4298 0.0702 -0.0699 """04h16m31.42s""" """-28d18m56.85s""" 18.0 12.258 11.344 0.12 0.0 -0.0 0.16 0.01 -0.01 2850.0 75.0 -75.0 75.0 -75.0 5.13 -2.841 2459520.70598 0.00031 -0.00031 1.367 0.055 -0.039 25.3 "" "" 8.457463 2.4e-05 -2.4e-05 0.03984 0.00022 -0.00022 89.287 0.697 "" "" "" 272.0 "" "" "" 55.94 0.82 -1.74 1 0

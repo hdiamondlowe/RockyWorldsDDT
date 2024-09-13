@@ -1,0 +1,82 @@
+# %ECSV 1.0
+# ---
+# datatype:
+# - name: hostname
+#   datatype: string
+#   description: Host Name
+#   meta: !!omap
+#   - {_votable_string_dtype: char}
+#   subtype: json
+# - name: pl_name
+#   datatype: string
+#   description: Planet Name
+#   meta: !!omap
+#   - {_votable_string_dtype: char}
+#   subtype: json
+# - {name: sy_dist, unit: pc, datatype: float64}
+# - {name: sy_disterr1, datatype: float64}
+# - {name: sy_disterr2, datatype: float64}
+# - name: rastr
+#   unit: sexagesimal
+#   datatype: string
+#   description: RA
+#   meta: !!omap
+#   - {_votable_string_dtype: char}
+#   subtype: json
+# - name: decstr
+#   unit: sexagesimal
+#   datatype: string
+#   description: Dec
+#   meta: !!omap
+#   - {_votable_string_dtype: char}
+#   subtype: json
+# - {name: sy_vmag, datatype: float64}
+# - {name: sy_jmag, datatype: float64}
+# - {name: sy_kmag, datatype: float64}
+# - {name: st_mass, unit: Solar mass, datatype: float64}
+# - {name: st_masserr1, unit: Solar mass, datatype: float64}
+# - {name: st_masserr2, unit: Solar mass, datatype: float64}
+# - {name: st_rad, unit: Solar Radius, datatype: float64}
+# - {name: st_raderr1, unit: Solar Radius, datatype: float64}
+# - {name: st_raderr2, unit: Solar Radius, datatype: float64}
+# - {name: st_teff, unit: K, datatype: float64}
+# - {name: st_tefferr1, unit: K, datatype: float64}
+# - {name: st_tefferr2, unit: K, datatype: float64}
+# - {name: st_tefferr12, unit: K, datatype: float64}
+# - {name: st_tefferr22, unit: K, datatype: float64}
+# - {name: st_logg, unit: log10(cm/s**2), datatype: float64}
+# - {name: st_lum, unit: log(Solar), datatype: float64}
+# - {name: pl_tranmid, unit: days, datatype: float64}
+# - {name: pl_tranmiderr1, unit: days, datatype: float64}
+# - {name: pl_tranmiderr2, unit: days, datatype: float64}
+# - {name: pl_rade, unit: Earth Radius, datatype: float64}
+# - {name: pl_radeerr1, unit: Earth Radius, datatype: float64}
+# - {name: pl_radeerr2, unit: Earth Radius, datatype: float64}
+# - {name: pl_bmasse, unit: Earth Mass, datatype: float64}
+# - {name: pl_bmasseerr1, datatype: float64}
+# - {name: pl_bmasseerr2, datatype: float64}
+# - {name: pl_orbper, unit: days, datatype: float64}
+# - {name: pl_orbpererr1, unit: days, datatype: float64}
+# - {name: pl_orbpererr2, unit: days, datatype: float64}
+# - {name: pl_orbsmax, datatype: float64}
+# - {name: pl_orbsmaxerr1, unit: AU, datatype: float64}
+# - {name: pl_orbsmaxerr2, unit: AU, datatype: float64}
+# - {name: pl_orbincl, unit: deg, datatype: float64}
+# - {name: pl_imppar, datatype: float64}
+# - {name: pl_orbeccen, datatype: float64}
+# - {name: pl_orbeccenerr1, datatype: float64}
+# - {name: pl_orbeccenerr2, datatype: float64}
+# - {name: pl_eqt, unit: K, datatype: float64}
+# - {name: pl_ratror, datatype: float64}
+# - {name: pl_ratrorerr1, datatype: float64}
+# - {name: pl_ratrorerr2, datatype: float64}
+# - {name: pl_ratdor, datatype: float64}
+# - {name: pl_ratdorerr1, datatype: float64}
+# - {name: pl_ratdorerr2, datatype: float64}
+# - {name: tran_flag, datatype: int32}
+# - {name: rv_flag, datatype: int32}
+# schema: astropy-2.0
+hostname pl_name sy_dist sy_disterr1 sy_disterr2 rastr decstr sy_vmag sy_jmag sy_kmag st_mass st_masserr1 st_masserr2 st_rad st_raderr1 st_raderr2 st_teff st_tefferr1 st_tefferr2 st_tefferr12 st_tefferr22 st_logg st_lum pl_tranmid pl_tranmiderr1 pl_tranmiderr2 pl_rade pl_radeerr1 pl_radeerr2 pl_bmasse pl_bmasseerr1 pl_bmasseerr2 pl_orbper pl_orbpererr1 pl_orbpererr2 pl_orbsmax pl_orbsmaxerr1 pl_orbsmaxerr2 pl_orbincl pl_imppar pl_orbeccen pl_orbeccenerr1 pl_orbeccenerr2 pl_eqt pl_ratror pl_ratrorerr1 pl_ratrorerr2 pl_ratdor pl_ratdorerr1 pl_ratdorerr2 tran_flag rv_flag
+"""TOI-270""" """TOI-270 b""" 22.4793 0.01355 -0.01355 """04h33m39.86s""" """-51d57m26.62s""" 12.603 9.099 8.251 0.39 0.01 -0.01 0.38 0.01 -0.01 3506.0 70.0 -70.0 70.0 -70.0 4.87 -1.712 2458387.09505 0.00074 -0.00074 1.206 0.039 -0.039 1.58 0.26 -0.26 3.3601538 4.8e-06 -4.8e-06 0.03197 0.00022 -0.00022 89.39 0.19 0.034 0.025 -0.025 581.0 0.0292 0.00069 -0.00069 17.48 1.49 -3.24 1 1
+"""TOI-270""" """TOI-270 c""" 22.4793 0.01355 -0.01355 """04h33m39.86s""" """-51d57m26.62s""" 12.603 9.099 8.251 0.39 0.01 -0.01 0.38 0.01 -0.01 3506.0 70.0 -70.0 70.0 -70.0 4.87 -1.712 2458389.50285 0.00029 -0.00029 2.355 0.064 -0.064 6.15 0.37 -0.37 5.6605731 3.1e-06 -3.1e-06 0.04526 0.00031 -0.00031 89.36 0.28 0.027 0.021 -0.021 488.0 0.05701 0.00071 -0.00071 27.01 0.6 -1.58 1 1
+"""TOI-270""" """TOI-270 d""" 22.4793 0.01355 -0.01355 """04h33m39.86s""" """-51d57m26.62s""" 12.603 9.099 8.251 0.39 0.01 -0.01 0.38 0.01 -0.01 3506.0 70.0 -70.0 70.0 -70.0 4.87 -1.712 2458389.68186 0.00059 -0.00059 2.133 0.058 -0.058 4.78 0.43 -0.43 11.379573 1.3e-05 -1.3e-05 0.0721 0.0005 -0.0005 89.73 0.19 0.032 0.023 -0.023 387.0 0.05163 0.00069 -0.00069 41.8 0.61 -0.59 1 1
