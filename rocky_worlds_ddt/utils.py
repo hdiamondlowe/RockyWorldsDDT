@@ -5,10 +5,6 @@ Utilities module for the Rocky Worlds DDT project.
 Authors
 -------
 - Mees Fix
-
-Use
----
->>> from rocky_worlds_ddt.utils import calculate_escape_velocity
 """
 import warnings
 
