@@ -13,6 +13,7 @@ dependencies = [
     "astropy>=6.1.1",
     "astroquery>=0.4.7",
     "bokeh>=3.6.2",
+    "jupyter>=1.1.1",
     "numpy>=2.0.0",
 ]
 

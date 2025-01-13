@@ -10,6 +10,7 @@ Use
 ---
 >>> from rocky_worlds_ddt.utils import calculate_escape_velocity
 """
+import warnings
 
 from astroquery.ipac.nexsci.nasa_exoplanet_archive import NasaExoplanetArchive
 from astropy.coordinates import SkyCoord
@@ -18,8 +19,9 @@ import astropy.units as u
 from astroquery.mast import MastMissions
 import numpy as np
 
+warnings.filterwarnings("ignore")
 
-def check_jwst_observation(ra, dec, radius=0.1):
+def check_jwst_observations(ra, dec, radius=0.1):
     """Check MAST to see if target ra and dec has JWST observations.
 
     Parameters
@@ -36,7 +38,7 @@ def check_jwst_observation(ra, dec, radius=0.1):
     results : astropy.Table.table
         Astropy table of query results
     """
-    regionCoords = SkyCoord(ra, dec, unit=("deg", "deg"))
+    regionCoords = SkyCoord(float(ra), float(dec), unit=("deg", "deg"))
     missions = MastMissions(mission="jwst")
     results = missions.query_region(
         regionCoords,
@@ -64,9 +66,7 @@ def check_jwst_observation(ra, dec, radius=0.1):
     return results
 
 
-def check_jwst_observation_type(
-    target_name, period, planet_ephemeris, jwst_observations
-):
+def check_jwst_observation_type(planet_name, period, planet_ephemeris, jwst_observations):
     """
     This fough code tries to figure out, given some target information and
     an observation start and end time,what exoplanet event is being
@@ -83,7 +83,7 @@ def check_jwst_observation_type(
 
     Parameters
     ----------
-    target_name : str
+    planet_name : str
         Name of your target
     period : float
         Period of exoplanet
@@ -100,34 +100,40 @@ def check_jwst_observation_type(
     )
     obs_end = obs_start + (jwst_observations["duration"] * u.second).to(u.day)
 
+    table_data = []
     for row, (start, end) in enumerate(zip(obs_start, obs_end)):
         n_start = (start - planet_ephemeris) / period
         n_end = (end - planet_ephemeris) / period
         n = int(n_start)
 
-        print(
-            f"This observation starts at n={n_start:0.3f} orbits after ephemeris and ends at n={n_end:0.3f} after"
-        )
-
         phase_start = n_start - n
         phase_end = n_end - n
 
-        print(
-            f"This observation spans from phase={phase_start:0.3f} to phase={phase_end:0.3f}"
-        )
         if phase_end - phase_start > 1:
-            print(f"This observation probably contains a phase curve of {target_name}")
+            observation_type = "PHASE CURVE"
         elif phase_start < 0.5 < phase_end:
-            print(
-                f"This observation probably contains a secondary eclipse of {target_name}"
-            )
+            observation_type = "SECONDARY ECLIPSE"
         elif phase_start < 1.0 < phase_end:
-            print(f"This observation probably contains a transit of {target_name}")
+            observation_type = "TRANSIT"
         else:
-            print(
-                f"This observation probably does not include an event for {target_name}; or check your parameters"
-            )
-        print(jwst_observations[row])
+            observation_type = "NO EVENT"
+
+        phase_data = {
+            "planet_name": planet_name,
+            "obs_type": observation_type,
+            "phase_start": phase_start,
+            "phase_end": phase_end,
+            "orbit_start": n_start,
+            "orbit_end": n_end,
+        }
+        table_data.append(phase_data)
+
+    for key in phase_data:
+        jwst_observations.add_column(
+            [x[key] for x in table_data], name=key
+        )
+
+    return jwst_observations
 
 
 def query_mast_jwst_archive(ra, dec, jwst_query_radius=0.1):
@@ -145,7 +151,7 @@ def query_mast_jwst_archive(ra, dec, jwst_query_radius=0.1):
     jwst_observations : astropy.Table.table
         An astropy table of targets that meet criteria provided.
     """
-    jwst_observations = check_jwst_observation(ra, dec, jwst_query_radius)
+    jwst_observations = check_jwst_observations(ra, dec, jwst_query_radius)
     return jwst_observations
 
 

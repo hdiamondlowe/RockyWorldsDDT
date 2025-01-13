@@ -8,3 +8,4 @@ docs/source/api/
 .cache
 *.pytest_cache
 *build
+*.ipynb_checkpoints
