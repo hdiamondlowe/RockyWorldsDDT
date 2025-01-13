@@ -17,7 +17,7 @@ import numpy as np
 
 warnings.filterwarnings("ignore")
 
-def check_jwst_observations(ra, dec, radius=0.1):
+def query_mast_jwst_archive(ra, dec, radius=0.1):
     """Check MAST to see if target ra and dec has JWST observations.
 
     Parameters
@@ -130,26 +130,6 @@ def check_jwst_observation_type(planet_name, period, planet_ephemeris, jwst_obse
         )
 
     return jwst_observations
-
-
-def query_mast_jwst_archive(ra, dec, jwst_query_radius=0.1):
-    """Query the MAST Archive for JWST observations at a given ra and dec.
-
-    Parameters
-    ----------
-    ra : float
-        Right ascension of target
-    dec : float
-        Declination of target
-
-    Returns
-    -------
-    jwst_observations : astropy.Table.table
-        An astropy table of targets that meet criteria provided.
-    """
-    jwst_observations = check_jwst_observations(ra, dec, jwst_query_radius)
-    return jwst_observations
-
 
 def query_nexsci_archive(target_name):
     """Query NASA NexSci Exoplanet Archive for planetary parameters.
